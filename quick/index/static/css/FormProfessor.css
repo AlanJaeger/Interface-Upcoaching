@@ -1,0 +1,167 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/header-background.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    width: 150px;
+    height: 70px;
+}
+
+.navbar-fixed-top.scrolled {
+    background-color: rgba(63, 62, 62, 0.678) !important;
+    transition: background-color 200ms linear;
+}
+
+.nav-item.active {
+    border-bottom-color: #fff;
+}
+
+.card-style {
+    background-color: rgba(229, 192, 200, 0.2);
+    margin-top: 114px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom: 40px;
+}
+
+.form-text {
+    font-family: 'Yantramanav', sans-serif;
+    color: #f7f7f7;
+    margin: 0px auto;
+}
+
+.form-edit {
+    margin: 0px auto;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    margin: 64px auto;
+}
+
+footer {
+    padding-top: 20px;
+    color: #999;
+    max-width: 1000px;
+}
+
+footer a {
+    color: #999;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer>p {
+    margin: 0 0 30px;
+}
+
+footer>ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer>ul>li {
+    list-style: none;
+    margin: 0 0 16px;
+    padding-right: 12px;
+    min-width: 100px;
+    font-size: 13px;
+}
+
+.edit-text {
+    color: #8e8e8e !important;
+    text-decoration: none;
+}
+
+#lang-selection {
+    margin-top: 20px;
+    border: 1px solid #333;
+    border-radius: 2px;
+    display: inline-block;
+    padding-left: 15px;
+}
+
+#lang-selection select {
+    background-color: #000;
+    border: none;
+    color: #999;
+    font-size: 14px;
+    width: 130px;
+    height: 48px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+#company {
+    font-size: 13px;
+    margin: 24px 0 50px;
+}
+
+.columns {
+    display: flex;
+}
+
+.column {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.columns.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.column.is-25 {
+    flex: none;
+    width: 25%;
+}
+
+.column.is-narrow {
+    flex: none;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.size-90 {
+    width: 90%;
+}
+
+.size-80 {
+    width: 80%;
+}
+
+.size-70 {
+    width: 70%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.colorText {
+    color: white;
+}
+
+.column {
+    color: white;
+}

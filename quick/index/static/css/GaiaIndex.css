@@ -1,0 +1,161 @@
+/*Responsividade do Título*/
+
+@media screen and (min-width: 800px) {
+    div.text-responsive {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.text-responsive {
+        font-size: 5px;
+    }
+}
+
+
+/*Responsividade do Subtítulo*/
+
+@media screen and (min-width: 800px) {
+    div.text-responsive2 {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.text-responsive2 {
+        font-size: 4px;
+    }
+}
+
+
+/*Slick Carousel*/
+
+.slider {
+    width: 90%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+    margin: 0px 10px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+
+.slick-active {
+    opacity: .5;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+html,
+body {
+    margin: 0 !important;
+    padding: 0!important;
+    -webkit-background-size: cover!important;
+    -moz-background-size: cover!important;
+    -o-background-size: cover!important;
+    background-size: cover!important;
+    max-width: 100% !important;
+    height: auto!important;
+}
+
+.estilo_lista {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    font-size: 17px;
+}
+
+.social-title_info {
+    margin-left: 10px;
+}
+
+.separator-danger_white {
+    border: white;
+}
+
+.separator-white:before {
+    border: 1px solid #ffffff !important;
+}
+
+.separator-white:after {
+    border: 1px solid #ffffff !important;
+}
+
+.btn-color {
+    background-color: #FE1043 !important;
+    border-color: #FE1043 !important;
+    -o-transition: .5s !important;
+    -ms-transition: .5s !important;
+    -moz-transition: .5s !important;
+    -webkit-transition: .5s !important;
+    transition: .5s;
+}
+
+.btn-color:hover {
+    background-color: white !important;
+}
+
+.btn-text:hover {
+    color: #FE1043!important;
+}
+
+.btn-color2 {
+    background-color: #0069D9 !important;
+    border-color: #0069D9 !important;
+    -o-transition: .5s !important;
+    -ms-transition: .5s !important;
+    -moz-transition: .5s !important;
+    -webkit-transition: .5s !important;
+    transition: .5s;
+}
+
+.btn-color2:hover {
+    background-color: white !important;
+}
+
+.btn-text2:hover {
+    color: #0069D9!important;
+}
+
+.hover-img{
+    background-color:white;
+    cursor: pointer;
+}
+.hover-img:hover,
+.texto-aluno:hover,
+.texto-nome:hover{
+    background-image: url('');
+    background-image: url("../img/Gaia.jpg");
+    color: white;
+}
+
+.btn-wd-size{
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+

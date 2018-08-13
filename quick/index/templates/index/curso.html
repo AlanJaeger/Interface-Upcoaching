@@ -1,0 +1,383 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Curso</title>
+    <link rel="icon" type="image/icon" href="{% static 'img/LogoSimb.png' %}">
+
+    <!--CSS Parallax-->
+    <link href="{% static 'css/curso.css' %}" rel="stylesheet" />
+
+    <!--CSS do Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Fonts CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Yantramanav:700" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-fixed-top">
+        <div class="container">
+            <img class="img-fluid logo" src="{% static 'img/logo.png' %}">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                          </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="parallax">
+        <div class="container">
+            <div class="content">
+                <div class="title-header">
+                    <h1>Curso de capacitação de socorrista</h1>
+                </div>
+                <h3 style="font-size: 35px">Natal 53</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="card card-style">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="overlay">
+                    <img src="{% static 'img/resgate.png' %}" style="width: 100%">
+                </div>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="content-blog">
+                    <h3 style=" margin-top: 20px; font-size: 35px; color: white">Conteúdo</h3>
+
+                    <ul class="estilo_lista">
+                        <li>
+                            Introdução ao APH, Cinemática do trauma, Abordagem primária, Colocação do colar cervical, Escala de Coma de Glasgow, Noções fundamentais de anatomia e fisiologia.
+                        </li>
+                    </ul>
+                    <ul class="estilo_lista">
+                        <li>
+                            Abordagem secundária, Rolamento 90° e 180°, Sinais vitais, Retirada de capacete.
+                        </li>
+                    </ul>
+                    <ul class="estilo_lista">
+                        <li>
+                            Rapel, Desobstrução das vias aéreas;
+                        </li>
+                    </ul>
+                    <ul class="estilo_lista">
+                        <li>
+                            RCP adulto/pediátrico/recém-nascido, Oximetria de pulso, Equipamentos para ventilação, Importância das vias e métodos de administração de medicamentos e acesso venoso, Biossegurança e precauções universais;
+
+                        </li>
+                    </ul>
+                    <ul class="estilo_lista">
+                        <li>
+                            Hemorragia e ferimentos, Bandagens, Elevação e transporte de vítimas, Bússola;
+                        </li>
+                    </ul>
+                    <ul class="estilo_lista">
+                        <li>
+                            Emergência Clínicas;
+                        </li>
+                    </ul>
+                    <ul class="estilo_lista">
+                        <li>
+                            Acampamento, Salvamento aquática
+                        </li>
+                    </ul>
+                    <ul class="estilo_lista">
+                        <li>
+                            Traumatismo músculo-esquelético, Escala de Trauma, Imobilização de fraturas, Improviso de colar cervical, Retirada de veículo;
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-4 text-left estilo_lista" style="margin-top: -363px;">
+
+                <h2 class="social-title" style="font-size: 25px;">Duração:</h2>
+                <span style="font-size: 14px">10 meses (Dividido em 10 módulos).</span>
+
+                <h2 class="social-title" style="font-size: 25px;">Carga Horária:</h2>
+                <span style="font-size: 14px">240 horas.</span>
+
+                <h2 class="social-title" style="font-size: 25px;">Taxa de Inscrição:</h2>
+                <span style="font-size: 14px">R$ 50,00.</span>
+
+                <h2 class="social-title" style="font-size: 25px;">Investimento:</h2>
+                <span style="font-size: 14px">10 parcelas de R$ 250,00 (Até o vencimento)</span>
+
+                <h2 class="social-title" style="font-size: 25px;">Inicio:</h2>
+                <span style="font-size: 14px">15 e 16/09/2018 (Aulas 1 final de semana por mês)</span>
+
+                <h2 class="social-title" style="font-size: 25px;">Horário:</h2>
+                <span style="font-size: 14px">8h ás 18h (Com intervalo para almoço)</span>
+
+                <h2 class="social-title" style="font-size: 25px;">Local:</h2>
+                <span style="font-size: 14px">Universidade Potiguar- UnP (Av. Salgado Filho)</span>
+
+                <div class="row">
+                    <div class="col-md">
+                        <button type="button" class="btn btn-color btn-block btn-text" style="margin-top: 20px; margin-left: -12px" data-toggle="modal" data-target="#inscrever" data-whatever="@mdo">Inscreva-se</button>
+                    </div>
+                    <div class="col-md">
+                        <button type="button" class="btn btn-block btn-color2 btn-text2" style="margin-top: 20px; margin-left: -11px;" data-toggle="modal" data-target="#interesse" data-whatever="@mdo">Tenho Interesse</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="modal fade" id="inscrever" tabindex="-1" role="dialog" aria-labelledby="inscrever" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content col-md-11 col-md-offset-0 text-center">
+                        <div class="modal-header" style="border-bottom: 1px; margin-top: 20px">
+                            <h3 class="modal-title" style="font-size: 27px; margin-right: 1px;" id="inscrever">Efetuar inscrição neste curso!</h3>
+
+                            <button type="button" class="close" style="margin-top: -106px; margin-right: -13px" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label><h4 class="text-gray">Nome Completo*</h4></label>
+                                    <input type="text" name="text" value="" placeholder="João Pedro Martins" class="form-control form-control-plain">
+                                </div>
+                                <div class="form-group">
+                                    <label><h4 class="text-gray">CPF*</h4></label>
+                                    <input type="text" name="cpf" placeholder="000.000.000-00" class="form-control form-control-plain">
+                                </div>
+                                <div class="form-group">
+                                    <label><h4 class="text-gray">E-mail*</h4></label>
+                                    <input type="email" name="email" placeholder="joao-pedro@provedor.com" class="form-control form-control-plain">
+                                </div>
+                                <div class="form-group">
+                                    <label><h4 class="text-gray">Data de Nascimento*</h4></label>
+                                    <input type="text" name="dtnasc" placeholder="11/11/2011" class="form-control form-control-plain">
+                                </div>
+                                <div class="form-group">
+                                    <label><h4 class="text-gray">Senha para acesso ao portal*</h4></label>
+                                    <input type="password" name="password" placeholder="●●●●" class="form-control form-control-plain">
+                                </div>
+                                <div class="form-group">
+                                    <label><h4 class="text-gray">Celular*</h4></label>
+                                    <input type="text" name="celular" placeholder="84 99879-8989" class="form-control form-control-plain">
+                                </div>
+                                <div class="form-group">
+                                    <label><h4 class="text-gray">Endereço*</h4></label>
+                                    <input type="text" name="endereco" placeholder="Rua, Av..." class="form-control form-control-plain">
+                                </div>
+                                <div class="form-group">
+                                    <label><h4 class="text-gray">Número*</h4></label>
+                                    <input type="text" name="numero" placeholder="99999" class="form-control form-control-plain">
+                                </div>
+                                <div class="form-group">
+                                    <label><h4 class="text-gray">Bairro*</h4></label>
+                                    <input type="text" name="bairro" placeholder="Nome do bairro" class="form-control form-control-plain">
+                                </div>
+                                <div class="form-group">
+                                    <label><h4 class="text-gray">Complemento*</h4></label>
+                                    <input type="text" name="complemento" placeholder="Apt. 9999" class="form-control form-control-plain">
+                                </div>
+                                <div class="form-group">
+                                    <label><h4 class="text-gray">Cidade*</h4></label>
+                                    <input type="text" name="cidade" placeholder="Nome da cidade" class="form-control form-control-plain">
+                                </div>
+                                <div class="form-group">
+                                    <label><h4 class="text-gray">Estado*</h4></label>
+                                    <select class="form-control form-control-plain">
+                                            <option selected>Rio Grande do Norte</option>
+                                            <option>...</option>
+                                        </select>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer" style="border-top: 0px">
+                            <button class="btn btn-danger btn-round btn-fill btn-wd" style="background-color: #FE1043; border-color: #FE1043; margin-top: -1px">Cadastrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="interesse" tabindex="-1" role="dialog" aria-labelledby="interesse" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content col-md-11 col-md-offset-0 text-center">
+                        <div class="modal-header" style="border-bottom: 0px; margin-top: 20px">
+                            <h2 class="modal-title" style="font-size: 27px; margin-right: 1px;" id="interesse">Tenho interesse neste curso!</h2>
+                            <button type="button" class="close" style="margin-top: -106px; margin-right: -13px" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label><h4 class="text-gray">Nome Completo*</h4></label>
+                                    <input type="text" name="text" value="" placeholder="João Pedro Martins" class="form-control form-control-plain">
+                                </div>
+                                <div class="form-group">
+                                    <label><h4 class="text-gray">E-mail*</h4></label>
+                                    <input type="email" name="email" placeholder="joao-pedro@provedor.com" class="form-control form-control-plain">
+                                </div>
+                                <div class="form-group">
+                                    <label><h4 class="text-gray">Celular*</h4></label>
+                                    <input type="text" name="celular" placeholder="84 99879-8989" class="form-control form-control-plain">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer" style="border-top: 0px">
+                            <button class="btn btn-danger btn-round btn-fill btn-wd" style="background-color: #0069D9; border-color: #0069D9; margin-top: -1px">Cadastrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="page-footer font-medium unique-color-dark pt-0" style="max-width: 100%;background-color: #1e1e1e;">
+
+        <div>
+            <div class="container">
+                <!--Grid row-->
+                <div class="row py-4 d-flex align-items-center" style="margin-bottom: -32px">
+
+                    <!--Grid column-->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h5 class="mb-0">Nós também estamos nas redes sociais!</h5>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+                        <!--Facebook-->
+                        <a class="edit-text" style="text-decoration: none;" href="https://www.facebook.com/agilsistemas.net/">
+                            <i class="fa fa-facebook mr-lg-4"> </i>
+                        </a>
+                        <!--Linkedin-->
+                        <a class="edit-text" style="text-decoration: none;" href="https://www.linkedin.com/company/agilsistemasweb/">
+                            <i class="fa fa-linkedin mr-lg-4"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="edit-text" style="text-decoration: none;" href="https://www.instagram.com/agil_sistemas/">
+                            <i class="fa fa-instagram mr-lg-4"> </i>
+                        </a>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+            </div>
+        </div>
+
+        <!--Footer Links-->
+        <div class="container mt-5 mb-4 text-center text-md-left">
+            <div class="row mt-3">
+
+                <!--First column-->
+                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Agil sistemas</strong>
+                    </h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; color: white">
+                    <p>Somos uma empresa que desenvolve tecnologia para a área de educação, oferecendo soluções inovadoras e customizadas para escolas de educação básica até a universidade.</p>
+                </div>
+                <!--/.First column-->
+
+                <!--Second column-->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <strong>Produtos</strong>
+                        </h6>
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>
+                            <img class="img-responsive img-logo2" src="{% static "img/saga-logo.png" %}">
+                        </p>
+                        <p>
+                            <img class="img-responsive img-logo2" src="{% static "img/logo-quick.png" %}">
+                        </p>
+                        <p>
+                            <img class="img-responsive img-logo2" src="{% static "img/exodo.png" %}">
+                        </p>
+                    </div>
+                <!--/.Second column-->
+
+                <!--Third column-->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Links Úteis</strong>
+                    </h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto edit-text" style="width: 60px;">
+                    <p>
+                        <a class="edit-text" style="text-decoration: none;" href="#!">Sua conta</a>
+                    </p>
+                    <p>
+                        <a class="edit-text" style="text-decoration: none;" href="#!">Ajuda</a>
+                    </p>
+                </div>
+                <!--/.Third column-->
+
+                <!--Fourth column-->
+                <div class="col-md-4 col-lg-3 col-xl-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Contato</strong>
+                    </h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fa fa-home mr-3"></i> Natal, Rio grande do norte 59056-045, BR</p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i><a class="edit-text" style="text-decoration: none;" href="mailto:suporte@agilsistemas.net.br">suporte@agilsistemas.net.br</a></p>
+                    <p>
+                        <i class="fa fa-phone mr-3"></i>(84) 2226-8230</p>
+                </div>
+                <!--/.Fourth column-->
+
+            </div>
+        </div>
+        <!--/.Footer Links-->
+
+        <!-- Copyright-->
+        <div class="footer-copyright py-3 text-center" style="margin-top: -50px">
+            © 2018 Copyright:
+            <a class="edit-text" style="text-decoration: none;" href="https://mdbootstrap.com/material-design-for-bootstrap/">
+                <strong> agilsistemas.net.br</strong>
+            </a>
+        </div>
+        <!--/.Copyright -->
+
+    </footer>
+    <!--/.Footer-->
+</body>
+
+<!--JS Bootstrap-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<!--JS Parallax-->
+<script type="text/javascript" src="{% static 'js/curso.js' %}"></script>
+
+</html>

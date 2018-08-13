@@ -1,0 +1,244 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-width: 100%;
+    background-image: url('../img/backgroundResgate.jpg');
+}
+
+.parallax {
+    padding: 150px 0;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding-top: 154px;
+}
+
+.overlay:before {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 96%;
+    height: 100%;
+    margin-left: 15px;
+    display: block;
+    z-index: 0;
+    background-color: rgba(66, 63, 63, 0.5);
+}
+
+.logo {
+    width: 150px;
+    height: 70px;
+}
+
+.navbar-fixed-top.scrolled {
+    background-color: rgba(63, 62, 62, 0.678) !important;
+    transition: background-color 200ms linear;
+}
+
+.tittle-header {
+    font-family: "Cambo", "Times New Roman", serif;
+    font-weight: 400 !important;
+    font-size: 3.6em !important;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.3), -2px 4px 2px rgba(0, 0, 0, 0.1) !important;
+}
+
+section {
+    overflow: hidden;
+}
+
+.img-style {
+    margin: 0;
+    padding: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+.card-style {
+    background-color: rgba(24, 22, 22, 0.473)!important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
+    padding: 44px;
+    margin: 46px;
+    margin-top: -52px;
+    margin-bottom: 21px !important;
+}
+
+.estilo_lista {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    font-size: 17px;
+    color: white;
+}
+
+.btn-color {
+    background-color: #FE1043 !important;
+    border-color: #FE1043 !important;
+    -o-transition: .5s !important;
+    -ms-transition: .5s !important;
+    -moz-transition: .5s !important;
+    -webkit-transition: .5s !important;
+    transition: .5s;
+}
+
+.btn-color:hover {
+    background-color: white !important;
+}
+
+.btn-text {
+    color: white !important;
+}
+
+.btn-text:hover {
+    color: #FE1043!important;
+}
+
+.btn-color2 {
+    background-color: #0069D9 !important;
+    border-color: #0069D9 !important;
+    -o-transition: .5s !important;
+    -ms-transition: .5s !important;
+    -moz-transition: .5s !important;
+    -webkit-transition: .5s !important;
+    transition: .5s;
+}
+
+.btn-color2:hover {
+    background-color: white !important;
+}
+
+.btn-text2 {
+    color: white !important;
+}
+
+.btn-text2:hover {
+    color: #0069D9!important;
+}
+
+footer {
+    padding-top: 20px;
+    color: #999;
+    max-width: 1000px;
+}
+
+footer a {
+    color: #999;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer>p {
+    margin: 0 0 30px;
+}
+
+footer>ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer>ul>li {
+    list-style: none;
+    margin: 0 0 16px;
+    padding-right: 12px;
+    min-width: 100px;
+    font-size: 13px;
+}
+
+.edit-text {
+    color: #8e8e8e !important;
+    text-decoration: none;
+}
+
+#lang-selection {
+    margin-top: 20px;
+    border: 1px solid #333;
+    border-radius: 2px;
+    display: inline-block;
+    padding-left: 15px;
+}
+
+#lang-selection select {
+    background-color: #000;
+    border: none;
+    color: #999;
+    font-size: 14px;
+    width: 130px;
+    height: 48px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+#company {
+    font-size: 13px;
+    margin: 24px 0 50px;
+}
+
+.columns {
+    display: flex;
+}
+
+.column {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.columns.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.column.is-25 {
+    flex: none;
+    width: 25%;
+}
+
+.column.is-narrow {
+    flex: none;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.size-90 {
+    width: 90%;
+}
+
+.size-80 {
+    width: 80%;
+}
+
+.size-70 {
+    width: 70%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.colorText {
+    color: white;
+}
+
+.column {
+    color: white;
+}
