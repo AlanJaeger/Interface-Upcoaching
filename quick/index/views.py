@@ -89,3 +89,7 @@ class Curso(View):
     def get(self, request):
         return render(request, 'index/curso.html')
         
+class CatalogoProfessor(View):
+    def get(self, request):
+        return render(request, 'index/catalogoProfessor.html')
+        

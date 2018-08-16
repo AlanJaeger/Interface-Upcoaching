@@ -32,6 +32,7 @@ urlpatterns = [
     url(r'aprovar/(?P<id_candidato>\d+)/',AprovarEntrada.as_view(), name = 'aprovar'),
     url(r'update',UpdateImagem.as_view(), name = 'update'),
     url(r'^login/$', Login.as_view(), name='login'),
-    url(r'^curso/$', Curso.as_view(), name='curso')
+    url(r'^curso/$', Curso.as_view(), name='curso'),
+    url(r'^catalogo/$', CatalogoProfessor.as_view(), name='catalogo')
         
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
