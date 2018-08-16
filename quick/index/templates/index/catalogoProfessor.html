@@ -23,28 +23,12 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-fixed-top">
         <div class="container">
-            <img class="img-fluid logo" src="{% static 'img/logo.png' %} ">
+            <a href="/">
+                <img class="img-fluid logo" src="{% static 'img/Ativo 9-8.png' %}">
+            </a>  
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
-                        <span class="sr-only">(current)</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
+            </button>           
         </div>
     </nav>
 
@@ -69,7 +53,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title card-text">Coaching Motivacional</h5>
                                     <p class="card-text">Coach Motivacional tem o objetivo de fazer com que os treinados contemplem seus pensamentos...</p>
-                                    <a href="{% url 'curso' %} " class="btn btn-block btn-outline-danger">Saiba Mais</a>
+                                    <a href="{% url 'curso' %}" class="btn btn-block btn-outline-danger">Saiba Mais</a>
                                 </div>
                             </div>
                         </div>
@@ -85,7 +69,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title card-text">Coaching Educacional</h5>
                                     <p class="card-text">Coaching Educacional é voltado tanto ao desenvolvimento dos professores e demais profissionais da educação...</p>
-                                    <a href="#" class="btn btn-block btn-outline-danger">Saiba Mais</a>
+                                    <a href="{% url 'curso' %}" class="btn btn-block btn-outline-danger">Saiba Mais</a>
                                 </div>
                             </div>
                         </div>
@@ -101,7 +85,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title card-text">Coaching Empresarial</h5>
                                     <p class="card-text">Coaching Empresarial entra exatamente para ajudar os empresários a gerenciarem suas demandas com sucesso...</p>
-                                    <a href="#" class="btn btn-block btn-outline-danger">Saiba Mais</a>
+                                    <a href="{% url 'curso' %}" class="btn btn-block btn-outline-danger">Saiba Mais</a>
                                 </div>
                             </div>
                         </div>
@@ -129,7 +113,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title card-text">Vou deixar esses 2 como exemplo</h5>
                                     <p class="card-text">Coach Motivacional tem o objetivo de fazer com que os treinados contemplem seus pensamentos...</p>
-                                    <a href="#" class="btn btn-block btn-outline-danger">Saiba Mais</a>
+                                    <a href="{% url 'curso' %}" class="btn btn-block btn-outline-danger">Saiba Mais</a>
                                 </div>
                             </div>
                             <div class="card card2">
@@ -137,97 +121,26 @@
                                 <div class="card-body">
                                     <h5 class="card-title card-text">Talvez depois a gente muda</h5>
                                     <p class="card-text">Coach Motivacional tem o objetivo de fazer com que os treinados contemplem seus pensamentos...</p>
-                                    <a href="#" class="btn btn-block btn-outline-danger">Saiba Mais</a>
+                                    <a href="{% url 'curso' %}" class="btn btn-block btn-outline-danger">Saiba Mais</a>
                                 </div>
                             </div>
                             <div class="card card2">
-                                <img class="card-img-top img-fluid" src="Img/card_vermelho/iron.png" alt="Card image cap">
+                                <img class="card-img-top img-fluid" src="{% static 'img/cards_completos/card_vermelho/iron.png' %}" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title card-text">Coaching Motivacional</h5>
+                                    <h5 class="card-title card-text">Vou deixar esses 2 como exemplo</h5>
                                     <p class="card-text">Coach Motivacional tem o objetivo de fazer com que os treinados contemplem seus pensamentos...</p>
-                                    <a href="#" class="btn btn-block btn-outline-danger">Saiba Mais</a>
+                                    <a href="{% url 'curso' %}" class="btn btn-block btn-outline-danger">Saiba Mais</a>
                                 </div>
                             </div>
                             <div class="card card2">
-                                <img class="card-img-top img-fluid" src="Img/card_vermelho/iron.png" alt="Card image cap">
+                                <img class="card-img-top img-fluid" src="{%static 'img/cards_completos/card_vermelho/iron.png' %} " alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title card-text">Coaching Motivacional</h5>
+                                    <h5 class="card-title card-text">Talvez depois a gente muda</h5>
                                     <p class="card-text">Coach Motivacional tem o objetivo de fazer com que os treinados contemplem seus pensamentos...</p>
-                                    <a href="#" class="btn btn-block btn-outline-danger">Saiba Mais</a>
+                                    <a href="{% url 'curso' %}" class="btn btn-block btn-outline-danger">Saiba Mais</a>
                                 </div>
                             </div>
-                        </div>
-                        <p class="card-text card-text-edit">Coaching Educacional</p>
-                        <div class="card-deck">
-                            <div class="card card2">
-                                <img class="card-img-top img-fluid" src="Img/card_vermelho/iron.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title card-text">Coaching Educacional</h5>
-                                    <p class="card-text">Coaching Educacional é voltado tanto ao desenvolvimento dos professores e demais profissionais da educação...</p>
-                                    <a href="#" class="btn btn-block btn-outline-danger">Saiba Mais</a>
-                                </div>
-                            </div>
-                            <div class="card card2">
-                                <img class="card-img-top img-fluid" src="Img/card_vermelho/iron.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title card-text">Coaching Educacional</h5>
-                                    <p class="card-text">Coaching Educacional é voltado tanto ao desenvolvimento dos professores e demais profissionais da educação...</p>
-                                    <a href="#" class="btn btn-block btn-outline-danger">Saiba Mais</a>
-                                </div>
-                            </div>
-                            <div class="card card2">
-                                <img class="card-img-top img-fluid" src="Img/card_vermelho/iron.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title card-text">Coaching Educacional</h5>
-                                    <p class="card-text">Coaching Educacional é voltado tanto ao desenvolvimento dos professores e demais profissionais da educação...</p>
-                                    <a href="#" class="btn btn-block btn-outline-danger">Saiba Mais</a>
-                                </div>
-                            </div>
-                            <div class="card card2">
-                                <img class="card-img-top img-fluid" src="Img/card_vermelho/iron.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title card-text">Coaching Educacional</h5>
-                                    <p class="card-text">Coaching Educacional é voltado tanto ao desenvolvimento dos professores e demais profissionais da educação...</p>
-                                    <a href="#" class="btn btn-block btn-outline-danger">Saiba Mais</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="card-text card-text-edit">Coaching Empresarial</p>
-                        <div class="card-deck">
-                            <div class="card card2">
-                                <img class="card-img-top img-fluid" src="Img/card_vermelho/iron.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title card-text">Coaching Empresarial</h5>
-                                    <p class="card-text">Coaching Empresarial entra exatamente para ajudar os empresários a gerenciarem suas demandas com sucesso...</p>
-                                    <a href="#" class="btn btn-block btn-outline-danger">Saiba Mais</a>
-                                </div>
-                            </div>
-                            <div class="card card2">
-                                <img class="card-img-top img-fluid" src="Img/card_vermelho/iron.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title card-text">Coaching Empresarial</h5>
-                                    <p class="card-text">Coaching Empresarial entra exatamente para ajudar os empresários a gerenciarem suas demandas com sucesso...</p>
-                                    <a href="#" class="btn btn-block btn-outline-danger">Saiba Mais</a>
-                                </div>
-                            </div>
-                            <div class="card card2">
-                                <img class="card-img-top img-fluid" src="Img/card_vermelho/iron.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title card-text">Coaching Empresarial</h5>
-                                    <p class="card-text">Coaching Empresarial entra exatamente para ajudar os empresários a gerenciarem suas demandas com sucesso...</p>
-                                    <a href="#" class="btn btn-block btn-outline-danger">Saiba Mais</a>
-                                </div>
-                            </div>
-                            <div class="card card2">
-                                <img class="card-img-top img-fluid" src="Img/card_vermelho/iron.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title card-text">Coaching Empresarial</h5>
-                                    <p class="card-text">Coaching Empresarial entra exatamente para ajudar os empresários a gerenciarem suas demandas com sucesso...</p>
-                                    <a href="#" class="btn btn-block btn-outline-danger">Saiba Mais</a>
-                                </div>
-                            </div>
-                        </div>
+                        </div>              
                     </div>
                 </div>
             </div>
@@ -235,7 +148,6 @@
 
     <!--Footer-->
     <footer class="page-footer font-medium unique-color-dark pt-0" style="max-width: 100%;background-color: #1e1e1e;">
-
         <div>
             <div class="container">
                 <!--Grid row-->
@@ -263,7 +175,6 @@
                         </a>
                     </div>
                     <!--Grid column-->
-
                 </div>
                 <!--Grid row-->
             </div>
