@@ -84,6 +84,7 @@ section {
     box-sizing: border-box;
     font-size: 17px;
     color: white;
+    
 }
 
 .btn-color {
@@ -246,4 +247,24 @@ footer>ul>li {
 .img-logo2{
     width: 60%;
     vertical-align: middle;
+}
+
+.modal-content{
+    background-image: url('../img/modal-img.jpg');
+}
+
+.text-white{
+    color: white;
+}
+
+.estilo_lista_espaco{
+    color:white;
+    margin-top: -363px;
+}
+
+@media screen and (max-width : 768px) {
+    .estilo_lista_espaco{
+        color: white;
+        margin-top: 0px !important;
+    }
 }
