@@ -511,3 +511,31 @@ p.description{
     width: 60%;
     vertical-align: middle;
 }
+
+.subtitulo{
+    margin-left: 323px;
+    margin-top: 115px;
+    font-size: 38px;
+}
+
+@media screen and (max-width : 768px) {
+    .subtitulo{
+        margin-left: 36px;
+        margin-top: 257px;
+        font-size: 23px;
+    }
+    .nav-text{
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        margin-left: -28px;
+    }
+}
+
+
+
+

@@ -267,4 +267,15 @@ footer>ul>li {
         color: white;
         margin-top: 0px !important;
     }
+    .overlay:before{
+        position: absolute;
+        content: " ";
+        top: 0;
+        left: 0;
+        width: 89%;
+        margin-left: 15px;
+        display: block;
+        z-index: 0;
+        background-color: rgba(66, 63, 63, 0.5);
+    }
 }
