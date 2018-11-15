@@ -30,25 +30,25 @@
 <body>
     <div class="container-fluid header">
         <div class="row">
-            <div class="col-3">
+            <div class="col-md-3">
                 <a class="logo" href="/">
                     <img class="img-responsive img-logo" src="{% static "img/logo-quick.png" %}">
                 </a>
             </div>
             <div class="col">
-                <!-- <a class="signin-button text-signin" href="{% url 'login' %} ">Entrar</a> -->
+                 <a class="signin-button text-signin" style="text-decoration:none;" href=http://upcoaching.agilsistemas.net.br/login/?next=/>Acesse o portal</a> 
             </div>
         </div>
         <div class="row">
             <div class="col text-space pitch">
                 <h1 class="pitch_title">Os melhores professores do RN <br> Em um só lugar <br>
                 </h1>
-                <p class="pitch_subtitle">GARANTA O SUCESSO EM SUA VIDA OU CARREIRA</p>
-                <button class="btn-edit text-edit" data-toggle="modal" data-target="#trabalhe" data-whatever="@mdo">Trabalhe conosco</button>
+                <p class="pitch_subtitle">QUICK CLASS O SEU PORTAL DE AULAS ONLINE</p>
+                <!-- <button class="btn-edit text-edit" data-toggle="modal" data-target="#trabalhe" data-whatever="@mdo">Trabalhe conosco</button> -->
                 <div class="row">
-                    <div class=".col-md-12">
-                        <p class ="subtitulo">
-                            Conheça nossa equipe de professores
+                    <div class="col-md-12">
+                        <p class ="subtitulo" style="margin-top:150px; margin-left:291px;">
+                            Conheça o nosso time de professores
                         </p>
                     </div>
                     
@@ -143,7 +143,7 @@
                 <div class="card-body">
                     <h5 class="card-title" style="color:black">Carlos Moura</h5>
                     <p class="card-text" style="color:black">Biólogo, mestre em genética e Biologia Molecular, gestor acadêmico, coach, analista comportamental e palestrante.</p>
-                    <a href="{% url 'catalogo' %} " class="btn btn-block btn-outline-danger">Portfólio</a>
+                    <a href="{% url 'catalogo' %} " class="btn btn-block btn-outline-danger">Saiba mais</a>
                 </div>
             </div>
 
@@ -152,7 +152,7 @@
                 <div class="card-body">
                     <h5 class="card-title" style="color:black">Estevan Roger</h5>
                     <p class="card-text" style="color:black">Formado em psicologia com foco em relacionamentos pessoais. Instrutor universitario e coach motivacional. </p>
-                    <a href="#" class="btn btn-block btn-outline-danger">Portfólio</a>
+                    <a href="#" class="btn btn-block btn-outline-danger">Saiba mais</a>
                 </div>
             </div>
 
@@ -161,7 +161,7 @@
                 <div class="card-body">
                     <h5 class="card-title" style="color:black">Natalia Roma</h5>
                     <p class="card-text" style="color:black">Formada em psicologia com foco em relacionamentos pessoais. Instrutor universitario e coach motivacional.</p>
-                    <a href="#" class="btn btn-block btn-outline-danger">Portfólio</a>
+                    <a href="#" class="btn btn-block btn-outline-danger">Saiba mais</a>
                 </div>
             </div>
 
@@ -170,7 +170,7 @@
                 <div class="card-body">
                     <h5 class="card-title" style="color:black">Rodrigo Correia</h5>
                     <p class="card-text" style="color:black">Formado em psicologia com foco em relacionamentos pessoais. Instrutor universitario e coach motivacional.</p>
-                    <a href="#" class="btn btn-block btn-outline-danger">Portfólio</a>
+                    <a href="#" class="btn btn-block btn-outline-danger">Saiba mais</a>
                 </div>
             </div>
 
@@ -179,7 +179,7 @@
                 <div class="card-body">
                     <h5 class="card-title" style="color:black">Erika Scherman</h5>
                     <p class="card-text" style="color:black">Formada em psicologia com foco em relacionamentos pessoais. Instrutor universitario e coach motivacional.</p>
-                    <a href="#" class="btn btn-block btn-outline-danger">Portfólio</a>
+                    <a href="#" class="btn btn-block btn-outline-danger">Saiba mais</a>
                 </div>
             </div>
 
@@ -188,7 +188,7 @@
                 <div class="card-body">
                     <h5 class="card-title" style="color:black">Thiago Tavares</h5>
                     <p class="card-text" style="color:black">Formado em psicologia com foco em relacionamentos pessoais. Instrutor universitario e coach motivacional.</p>
-                    <a href="#" class="btn btn-block btn-outline-danger">Portfólio</a>
+                    <a href="#" class="btn btn-block btn-outline-danger">Saiba mais</a>
                 </div>
             </div>
         </div>
@@ -209,7 +209,7 @@
                 <a class="column" href="#" data-id="watchanywhere">
                     <img alt="Watch anywhere" src="{% static "img/customer.svg" %}" />
                     <h2>
-                        Também Oferecemos
+                        Conheça outros serviços
                     </h2>
                 </a>
 
@@ -262,7 +262,7 @@
                                 VISÃO
                             </h1>
                                 <p class="description">
-                                    Sermos reconhecidos como a melhor plataforma EaD para a oferta de Coaching do país. 
+                                    Sermos reconhecidos como a melhor plataforma do Brasil para aulas online.                                    
                                 </p>
                             </div>
 
@@ -271,7 +271,7 @@
                                     VALORES
                                 </h1>
                                     <p class="description">
-                                        Respeito aos nossos clientes. Transparência nas relações. Comportamento ético. Pontualidade em nossas entregas.
+                                            Respeito aos nossos clientes. Transparência nas relações. Comportamento ético. Compromisso com a aprendizagem dos nossos estudantes.                                            
                                     </p>
                                 </div>
                         
@@ -287,39 +287,48 @@
                 <div class="columns size-90 center">
                     <div class="column text-center">
                        <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3" style="max-width: 20%;">
                     <div class="info-icon">
                         <div class="icon zoom" style="color:white; font-size:55px">
-                                <i class="fas fa-shopping-cart fa-lg"></i>  
+                                <i class="fas fa-chalkboard-teacher"></i>
                         </div>
-                        <p class="description">Pagamentos no boleto ou no cartão em até 10 vezes sem juros</p>
+                        <p class="description">Aulas Particulares Online</p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" style="max-width: 20%;">
                     <div class="info-icon">
                         <div class="icon zoom" style="color: white; font-size: 55px">
-                            <i class="fas fa-users fa-lg"></i>
+                                <i class="fas fa-th-large"></i>
                         </div>
-                        <p class="description">Encontre os melhores coaches em um só lugar</p>
+                        <p class="description">Módulos de conteúdos</p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" style="max-width: 20%;">
                     <div class="info-icon">
                         <div class="icon zoom" style="color: white; font-size: 50px">
-                            <i class="fas fa-user-check fa-lg"></i>
+                                <i class="fas fa-book"></i>
                         </div>
-                        <p class="description">Todos os serviços de coaching ao seu alcance.</p>
+                        <p class="description" style="margin-left:-15px;">Cursos isolados por matéria</p>
+                    </div> 
+                </div>
+
+                <div class="col-md-3" style="max-width: 20%;">
+                    <div class="info-icon">
+                        <div class="icon zoom" style="color: white; font-size: 55px">
+                                <i class="fas fa-brain"></i>
+                        </div>
+                        <p class="description">Cursos por área de conhecimento</p>
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="info-icon">
-                        <div class="icon zoom" style="color: white; font-size: 55px">
-                            <i class="fas fa-suitcase fa-lg"></i>
+                <div class="col-md-3" style="max-width: 20%;">
+                        <div class="info-icon">
+                            <div class="icon zoom" style="color: white; font-size: 55px">
+                                    <i class="fas fa-hand-holding-heart"></i>
+                            </div>
+                            <p class="description">Acompanhamento Pedagógico</p>
                         </div>
-                        <p class="description">Atendimentos de coaching, cursos e treinamentos para pessoas físicas ou empresas.</p>
                     </div>
-                </div>
             </div>
                     </div>
                 </div>
@@ -374,16 +383,16 @@
 
                 <!--First column-->
                 <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <strong>Agil sistemas</strong>
+                    <h6 class="text-uppercase font-weight-bold" style="margin-bottom:22px;">
+                         <strong>Quick Class</strong> 
                     </h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; color: white">
-                    <p>Somos uma empresa que desenvolve tecnologia para a área de educação e desenvolvimento humano, oferecendo soluções inovadoras e customizadas.</p>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width:60px; color:white;">
+                    <p style="margin-top:-39px">Somos uma empresa que desenvolve tecnologia para a área de educação e desenvolvimento humano, oferecendo soluções inovadoras e customizadas.</p>
                 </div>
                 <!--/.First column-->
 
                 <!--Second column-->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                     <h6 class="text-uppercase font-weight-bold">
                         <strong>Produtos</strong>
                     </h6>
@@ -397,7 +406,7 @@
                     <p>
                         <img class="img-responsive img-logo2" src="{% static "img/exodo.png" %}">
                     </p>
-                </div>
+                </div> -->
                 <!--/.Second column-->
 
                 <!--Third column-->
@@ -407,7 +416,7 @@
                     </h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto edit-text" style="width: 60px;">
                     <p>
-                        <a class="edit-text" style="text-decoration: none;" href="/professor">Trabalhe Conosco</a>
+                        <!-- <a class="edit-text" style="text-decoration: none;" href="/professor">Trabalhe Conosco</a> -->
                     </p>
                     <p>
                         <a class="edit-text" style="text-decoration: none;" href="#!">Ajuda</a>
@@ -422,11 +431,11 @@
                     </h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
-                        <i class="fa fa-home mr-3"></i> Natal, Rio grande do norte 59056-045, BR</p>
+                        <i class="fa fa-home mr-3"></i> contato@quickclass.net.br</p>
                     <p>
-                        <i class="fa fa-envelope mr-3"></i><a class="edit-text" style="text-decoration: none;" href="mailto:suporte@agilsistemas.net.br">suporte@agilsistemas.net.br</a></p>
+                        <i class="fa fa-envelope mr-3"></i><a class="edit-text" style="text-decoration: none;" href="mailto:suporte@quickclass.net.br">suporte@quickclass.net.br</a></p>
                     <p>
-                        <i class="fa fa-phone mr-3"></i>(84) 2226-8230</p>
+                        <!-- <i class="fa fa-phone mr-3"></i>(84) 2226-8230</p> -->
                 </div>
                 <!--/.Fourth column-->
 
