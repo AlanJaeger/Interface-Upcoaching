@@ -30,24 +30,30 @@
 <body>
     <div class="container-fluid header">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-6">
                 <a class="logo" href="/">
                     <img class="img-responsive img-logo" src="{% static "img/logo-quick.png" %}">
                 </a>
             </div>
-            <div class="col">
-                 <a class="signin-button text-signin" style="text-decoration:none;" href=http://upcoaching.agilsistemas.net.br/login/?next=/>Acesse o portal</a> 
-            </div>
+            <div class="col-md-2" style=" max-width:156px; margin-left:115px;">
+                 <a class="signin-button text-signin" style="text-decoration:none;" data-toggle="modal" data-target="#trabalhe" href=#/>Iniciar Sessão</a> 
+            </div> 
+            <div class="col-md-2" style=" max-width:144px;">
+                <a class="signin-button text-signin" style="text-decoration:none;" href=#/>Registrar-se</a> 
+           </div>
+           <div class="col-md-2">
+                <a class="signin-button text-signin" style="text-decoration:none;" href=#/>Torne-se um professor</a> 
+           </div>
         </div>
         <div class="row">
             <div class="col text-space pitch">
                 <h1 class="pitch_title">Os melhores professores do RN <br> em um só lugar <br>
                 </h1>
                 <p class="pitch_subtitle">QUICK CLASS O SEU PORTAL DE AULAS ONLINE</p>
-                <!-- <button class="btn-edit text-edit" data-toggle="modal" data-target="#trabalhe" data-whatever="@mdo">Trabalhe conosco</button> -->
+                <button class="btn-edit text-edit" data-toggle="modal" data-target="#trabalhe" data-whatever="@mdo">Acesse o nosso catálogo</button>
                 <div class="row">
                     <div class="col-md-12">
-                        <p class ="subtitulo" style="margin-top:150px; margin-left:291px;">
+                        <p class ="subtitulo" style="margin-left:291px;">
                             Conheça o nosso time de professores
                         </p>
                     </div>
