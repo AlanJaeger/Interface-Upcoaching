@@ -36,10 +36,10 @@
                 </a>
             </div>
             <div class="col-md-2" style=" max-width:156px; margin-left:115px;">
-                 <a class="signin-button text-signin" style="text-decoration:none;" data-toggle="modal" data-target="#trabalhe" href=#/>Iniciar Sessão</a> 
+                 <a class="signin-button text-signin" style="text-decoration:none;" data-toggle="modal" data-target="#login" href=#/>Iniciar Sessão</a> 
             </div> 
             <div class="col-md-2" style=" max-width:144px;">
-                <a class="signin-button text-signin" style="text-decoration:none;" href=#/>Registrar-se</a> 
+                <a class="signin-button text-signin" style="text-decoration:none;" data-toggle="modal" data-target="#cadastro" href=#/>Registrar-se</a> 
            </div>
            <div class="col-md-2">
                 <a class="signin-button text-signin" style="text-decoration:none;" href=#/>Torne-se um professor</a> 
@@ -65,13 +65,13 @@
         </div>
     </div>
 
-    <div class="modal fade" id="trabalhe" tabindex="-1" role="dialog" aria-labelledby="inscrever" aria-hidden="true">
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="inscrever" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content col-md-11 col-md-offset-0 text-center">
                     <div class="modal-header" style="border-bottom: 0px; margin-top: 20px">
                         <h2 class="modal-title" id="inscrever" style="
-                        margin-left: 45px;">
-                        Preencha o formulário</h2>
+                        margin-left: 106px; font-family:Roboto; font-weight:600">
+                        iniciar sessão</h2>
                         <button type="button" class="close" style="margin-top: -106px; margin-right: -13px" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -79,60 +79,43 @@
                     <div class="modal-body">
                         <form>
                             <div class="form-group">
-                                <label><h4 class="text-gray">Nome Completo*</h4></label>
-                                <input type="text" name="text" value="" placeholder="João Pedro Martins" class="form-control form-control-plain">
+                              <label for="exampleInputEmail1" style="float:left">Email</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu email">
                             </div>
                             <div class="form-group">
-                                <label><h4 class="text-gray">CPF*</h4></label>
-                                <input type="text" name="cpf" placeholder="000.000.000-00" class="form-control form-control-plain">
+                              <label for="exampleInputPassword1" style="float:left">Senha</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite sua senha">
                             </div>
-                            <div class="form-group">
-                                <label><h4 class="text-gray">E-mail*</h4></label>
-                                <input type="email" name="email" placeholder="joao-pedro@provedor.com" class="form-control form-control-plain">
-                            </div>
-                            <div class="form-group">
-                                <label><h4 class="text-gray">Data de Nascimento*</h4></label>
-                                <input type="text" name="dtnasc" placeholder="11/11/2011" class="form-control form-control-plain">
-                            </div>
-                            <div class="form-group">
-                                <label><h4 class="text-black">Senha para acesso ao portal*</h4></label>
-                                <input type="password" name="password" placeholder="●●●●" class="form-control form-control-plain">
-                            </div>
-                            <div class="form-group">
-                                <label><h4 class="text-gray">Celular*</h4></label>
-                                <input type="text" name="celular" placeholder="84 99879-8989" class="form-control form-control-plain">
-                            </div>
-                            <div class="form-group">
-                                <label><h4 class="text-gray">Endereço*</h4></label>
-                                <input type="text" name="endereco" placeholder="Rua, Av..." class="form-control form-control-plain">
-                            </div>
-                            <div class="form-group">
-                                <label><h4 class="text-gray">Número*</h4></label>
-                                <input type="text" name="numero" placeholder="99999" class="form-control form-control-plain">
-                            </div>
-                            <div class="form-group">
-                                <label><h4 class="text-gray">Bairro*</h4></label>
-                                <input type="text" name="bairro" placeholder="Nome do bairro" class="form-control form-control-plain">
-                            </div>
-                            <div class="form-group">
-                                <label><h4 class="text-gray">Complemento*</h4></label>
-                                <input type="text" name="complemento" placeholder="Apt. 9999" class="form-control form-control-plain">
-                            </div>
-                            <div class="form-group">
-                                <label><h4 class="text-gray">Cidade*</h4></label>
-                                <input type="text" name="cidade" placeholder="Nome da cidade" class="form-control form-control-plain">
-                            </div>
-                            <div class="form-group">
-                                <label><h4 class="text-gray">Estado*</h4></label>
-                                <select class="form-control form-control-plain">
-                                    <option selected>Rio Grande do Norte</option>
-                                    <option>...</option>
-                                </select>
-                            </div>
-                        </form>
+                            <button type="submit" class="signin-button text-signin" style="font-size:17px;">Entrar</button>
+                          </form>
                     </div>
-                    <div class="modal-footer" style="border-top: 0px">
-                        <button class="btn btn-danger btn-round btn-fill btn-wd" style="background-color: #FE1043; border-color: #FE1043; margin-top: -1px">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="cadastro" tabindex="-1" role="dialog" aria-labelledby="inscrever" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content col-md-11 col-md-offset-0 text-center">
+                    <div class="modal-header" style="border-bottom: 0px; margin-top: 20px">
+                        <h2 class="modal-title" id="inscrever" style="
+                        margin-left: 106px; font-family:Roboto; font-weight:600">
+                        iniciar sessão</h2>
+                        <button type="button" class="close" style="margin-top: -106px; margin-right: -13px" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1" style="float:left">Email</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu email">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputPassword1" style="float:left">Senha</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite sua senha">
+                            </div>
+                            <button type="submit" class="signin-button text-signin" style="font-size:17px;">Entrar</button>
+                          </form>
                     </div>
                 </div>
             </div>
