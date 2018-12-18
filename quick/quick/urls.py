@@ -30,6 +30,8 @@ urlpatterns = [
     url(r'update',UpdateImagem.as_view(), name = 'update'),
     url(r'^login/$', Login.as_view(), name='login'),
     url(r'^curso/$', Curso.as_view(), name='curso'),
-    url(r'^catalogo/$', CatalogoProfessor.as_view(), name='catalogo')
+    url(r'^catalogo/$', CatalogoProfessor.as_view(), name='catalogo'),
+    url(r'^cadastrar_aula/$', CadastroAula.as_view(), name='cadastrar_aula')
+
         
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

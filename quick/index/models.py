@@ -33,5 +33,9 @@ class Disciplina(models.Model):
     def professores(self):
         return ProfessoresInteressados.objects.filter(disciplina = self)
 
+class Aulas(models.Model):
+    titulo = models.TextField(max_length= 200)
+    nome = models.TextField(max_length = 100)
+
 
     

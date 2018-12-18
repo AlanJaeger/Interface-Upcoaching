@@ -4,7 +4,7 @@ from django.http import HttpResponse
 import datetime
 from django.views import View
 from index.models import ProfessoresInteressados, Professor, Disciplina
-from .forms import InteresseForm, ProfessorForm, PedidoForm
+from .forms import InteresseForm, ProfessorForm, PedidoForm, AulaForm
 
 
 # Create your views here.
@@ -92,4 +92,19 @@ class Curso(View):
 class CatalogoProfessor(View):
     def get(self, request):
         return render(request, 'index/catalogoProfessor.html')
+
+class CadastroAula(View):
+    def get(self, request):
+        form = AulaForm()
+        return render(request,'index/cadastroAula.html',{'form': form})
+
+
+    def post(self, request):
+        form = AulaForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+        else:
+            print(form.errors)
+
+        return render(request,'index/cadastroAula.html',{'form': form})
         

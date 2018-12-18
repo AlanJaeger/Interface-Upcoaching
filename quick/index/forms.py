@@ -1,5 +1,5 @@
 from django.forms import ModelForm
-from .models import ProfessoresInteressados
+from .models import ProfessoresInteressados, Aulas
 from django.forms import Form, ModelForm, TextInput, DateField, DateInput, ImageField, FileInput, CharField, IntegerField,Select
 
 
@@ -32,4 +32,13 @@ class PedidoForm(ModelForm):
         fields = ['foto']
         widgets = {
             'foto': FileInput(attrs={'class':'input'})
+        }
+
+
+class AulaForm(ModelForm):
+    class Meta:
+        model = Aulas
+        fields = ['titulo']
+        widgets = {
+            'titulo' : TextInput(attrs={'class': 'form-control', 'placeholder':'titulo da aula'}),
         }
