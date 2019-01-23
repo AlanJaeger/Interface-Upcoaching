@@ -135,20 +135,31 @@ body {
     color: #0069D9!important;
 }
 
-.hover-img{
+/* .hover-img{
     background-color:white;
     cursor: pointer;
-}
-.hover-img:hover,
+} */
+/* .hover-img:hover,
 .texto-aluno:hover,
 .texto-nome:hover{
     background-image: url('');
     background-image: url("../img/Gaia.jpg");
     color: white;
-}
+} */
 
 .btn-wd-size{
     width: 100px;
+}
+
+.backgroundd{
+    margin-top: 39px;
+    height: 639px;
+    background-image: url("../img/BannerLogin.jpg");
+}
+.backgrounddd{
+    margin-top: 39px;
+    height: 639px;
+    background-image: url("../img/BannerCadastro.jpg");
 }
 
 

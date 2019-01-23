@@ -29,8 +29,10 @@ urlpatterns = [
     url(r'aprovar/(?P<id_candidato>\d+)/',AprovarEntrada.as_view(), name = 'aprovar'),
     url(r'update',UpdateImagem.as_view(), name = 'update'),
     url(r'^login/$', Login.as_view(), name='login'),
+    url(r'^cadastro/$', Cadastro.as_view(), name='cadastro'),
     url(r'^curso/$', Curso.as_view(), name='curso'),
     url(r'^catalogo/$', CatalogoProfessor.as_view(), name='catalogo'),
+    url(r'^agenda/$', AgendaProfessor.as_view(), name='agenda'),
     url(r'^cadastrar_aula/$', CadastroAula.as_view(), name='cadastrar_aula')
 
         

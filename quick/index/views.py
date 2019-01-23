@@ -34,26 +34,31 @@ class DashboardPedidos(View):
     def get(self, request):
         pedidos = ProfessoresInteressados.objects.all()
         return render(request,'index/pedidos.html', {'pedidos': pedidos})
+
+class DashboardAulas(View):
+    def get(self, request):
+        aulas = Aulas.objects.all()
+        return render(request, 'index/cadastroAula.html,', {'aula': aula})
     
 
 class DashboardAluno(View):
     def get(self, request): 
         disciplinas = Disciplina.objects.all()
-        professores = ProfessoresInteressados.objects.all()
+        professores = ProfessoresInteressados.objects.filter(aprovacao = True)
         return render(request, 'index/aluno.html',{'professores':professores, 'disciplinas':disciplinas})
 
 class AprovarEntrada(View):
     def post(self, request,id_candidato):        
         candidato = ProfessoresInteressados.objects.get(pk = id_candidato)
+        candidato.aprovacao = True
         candidato.save()
 
-       # if form.is_valid():
-        #    formulario = form.save(commit = False)
+        # disciplina = Disciplina.objects.filter(aprovacao = False)
+        # disciplina.aprovacao = True
+        # query = request.GET.get('q', None)
+        # disciplina.save()
+            
 
-        #formulario.save()    
-
-        # candidato.save()
-        
         
         #print(request.POST['foto'])
         
@@ -85,6 +90,10 @@ class Login(View):
      def get(self, request):
         return render(request,'index/login.html')
 
+class Cadastro(View):
+     def get(self, request):
+        return render(request,'index/cadastro.html')
+
 class Curso(View):
     def get(self, request):
         return render(request, 'index/curso.html')
@@ -107,4 +116,22 @@ class CadastroAula(View):
             print(form.errors)
 
         return render(request,'index/cadastroAula.html',{'form': form})
-        
+
+
+        print(aula.titulo)
+
+class AgendaProfessor(View):
+    def get(self, request):
+        form = AulaForm()
+        return render(request,'index/agenda.html',{'form': form})
+
+
+    def post(self, request):
+        form = AulaForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+        else:
+            print(form.errors)
+
+        return render(request,'index/agenda.html',{'form': form})
+

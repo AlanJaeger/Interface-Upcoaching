@@ -18,6 +18,8 @@ class ProfessoresInteressados(models.Model):
     cep = models.CharField(max_length=9, blank=True, null=True)
     foto = models.ImageField(upload_to='professores', blank=True, null=True)
     disciplina = models.ForeignKey('Disciplina', on_delete=models.PROTECT)
+    aprovacao = models.BooleanField(default=False)
+
 
 class Professor(models.Model):
     nome = models.TextField(max_length = 200)
@@ -26,16 +28,29 @@ class Professor(models.Model):
     foto = models.FileField(upload_to='media/', blank=True, null=True)
     disciplina = models.ForeignKey('Disciplina', on_delete=models.PROTECT)
 
+    def __str__(self):
+        return self.nome
+
 class Disciplina(models.Model):
     nome = models.TextField()
+    aprovacao = models.BooleanField(default=False)
+
     def __str__(self):
         return self.nome
     def professores(self):
         return ProfessoresInteressados.objects.filter(disciplina = self)
 
 class Aulas(models.Model):
-    titulo = models.TextField(max_length= 200)
-    nome = models.TextField(max_length = 100)
+    Professor = models.ForeignKey('ProfessoresInteressados', on_delete= models.PROTECT, null = True)
+    dia = models.DateField(blank=True, null = True)
+    horario = models.TimeField(blank = True, null = True)
+    duracao = models.TimeField(blank = True, null = True)
+    disciplina = models.TextField(blank = True, max_length = 100)
+    conteudo = models.TextField(blank = True, max_length = 100)
+
+    def __str__(self):
+        return self.disciplina
+
 
 
     

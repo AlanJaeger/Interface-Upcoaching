@@ -1,5 +1,22 @@
+{% load staticfiles %}
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <title>Perfil do Professor</title>
+    <link rel="icon" type="image/icon" href="Img/LogoSimb.png">
+
+    <!--CSS do Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--CSS Quick Class-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/perfil.css' %}">
+
+    <!--Fonts CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Yantramanav:700" rel="stylesheet">
+</head>
     <header>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -21,7 +38,7 @@
                     <img src="{%static "img/iron1.png"%}">
                     <div class="carousel-caption d-none d-md-block">
                         <div class="card" style="width: 18rem; transform: translate(600px, -50px)">
-                            <img class="card-img-top img-fluid" src="{{ professor.foto.url }}" alt="Card image cap">
+                            <img class="card-img-top img-fluid"  alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title card-text">{{professor.nome}}</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -51,23 +68,17 @@
                         <p class="card-text card-text-edit">{{disciplina.nome}}</p>
                         <section class="center slider">
                             <div class="carousel2">
-                                    {% for professor in disciplina.professores %}  
-                                <div class="card" style="width: 10rem;">
-                                    <img class="card-img-top" src="{{professor.foto.url}}" alt="Card image cap" style="height:100%">
+                                    {% for professor in disciplina.professores %} 
+                                    {% if professor.aprovacao == True %}
+                                <div class="card" style="width: 275px;">
+                                    <img class="card-img-top"  alt="Card image cap" style="height:0%">
                                     <div class="card-body">
                                         <h5 class="card-title" style="color:black">{{professor.nome}}</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                         <a href="#" class="btn btn-block btn-outline-danger">Comprar</a>
                                     </div>
                                 </div>
-                                <div class="card" style="width: 10rem;">
-                                    <img class="card-img-top" src="{{professor.foto.url}}" alt="Card image cap" style="height:100%">
-                                    <div class="card-body">
-                                        <h5 class="card-title" style="color:black">{{professor.nome}}</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-block btn-outline-danger">Comprar</a>
-                                    </div>
-                                </div>
+                                {% endif %}                                                        
                                 {% endfor %} 
                             </div>
                         </section>   

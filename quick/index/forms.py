@@ -1,7 +1,7 @@
 from django.forms import ModelForm
 from .models import ProfessoresInteressados, Aulas
-from django.forms import Form, ModelForm, TextInput, DateField, DateInput, ImageField, FileInput, CharField, IntegerField,Select
-
+from django.forms import Form, ModelForm, TextInput, DateField, DateInput, ImageField, FileInput, CharField, IntegerField,Select, TimeInput
+from django.utils.timezone import now
 
 
 class InteresseForm(ModelForm):
@@ -38,7 +38,11 @@ class PedidoForm(ModelForm):
 class AulaForm(ModelForm):
     class Meta:
         model = Aulas
-        fields = ['titulo']
+        fields = ['dia','horario','duracao','disciplina','conteudo']
         widgets = {
-            'titulo' : TextInput(attrs={'class': 'form-control', 'placeholder':'titulo da aula'}),
+            'dia' : TextInput(attrs={'class': 'form-control', 'placeholder':'Dia da aula'}),
+            'horario': TimeInput(attrs={'class':'form-control', 'placeholder':'Horario da aula'}),
+            'duracao': TimeInput(attrs={'class':'form-control', 'placeholder':'Duração da aula'}),
+            'disciplina' : TextInput(attrs={'class': 'form-control', 'placeholder':'Disciplina ministrada na aula'}),
+            'conteudo' : TextInput(attrs={'class': 'form-control', 'placeholder':'Conteudo da aula'})
         }

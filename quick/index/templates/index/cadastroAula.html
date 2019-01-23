@@ -33,7 +33,7 @@ $(document).ready(function() {
                 center: 'title',
                 right: 'month,agendaWeek,agendaDay'
             },
-            defaultDate: '2016-09-12',
+            defaultDate: '2018-12-18',
             navLinks: true, // can click day/week names to navigate views
             selectable: true,
             selectHelper: true,
@@ -46,10 +46,6 @@ $(document).ready(function() {
             eventClick: function(event, element) {
                 // Display the modal and set the values to the event values.
                 $('.modal').modal('show');
-                $('.modal').find('#title').val(event.title);
-                $('.modal').find('#starts-at').val(event.start);
-                $('.modal').find('#ends-at').val(event.end);
-
             },
             editable: true,
             eventLimit: true // allow "more" link when too many events
@@ -156,6 +152,18 @@ $(document).ready(function() {
                         </div><!-- /.modal-content -->
                     </div><!-- /.modal-dialog -->
                 </div><!-- /.modal -->
+
+                {%for aula in Aulas %}
+                <td class="fc-event-container">
+                        <a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable fc-resizable">
+                            <div class="fc-content"> 
+                                <span class="fc-title">{{aula.titulo}}</span>
+                            </div>
+                            <div class="fc-resizer fc-end-resizer">
+                            </div>
+                        </a>
+                    </td>
+                {%endfor%}
                 
         </div>
     </div>
