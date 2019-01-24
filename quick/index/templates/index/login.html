@@ -67,6 +67,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#" style="font-size:16px">Catalogo</a>
                 </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="font-size:16px">Catalogo</a>
+                </li>
+                
                
             </ul>
         </div>
@@ -132,7 +137,7 @@
           <div class="title-area">
             <h2 style="font-size:2.8rem">Efetue login</h2>
           </div>
-
+<!--           
           <label>
             <h4>E-mail</h4>
           </label>
@@ -146,8 +151,12 @@
           </label>
           <div class="form-group" style="width:350px; margin-left: -55px;">
             <input type="password" name="password" value="" placeholder="&#x25CF;&#x25CF;&#x25CF;&#x25CF;" class="form-control form-control-plain">
-          </div>
-        
+          </div> -->
+          
+          <form action="{% url 'login' %}" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+          <a href="{% url 'index' %}"><button type="submit">Entrar</button></a>
 
           <div class="footer" style="background-color: inherit">
             <button class="btn btn-danger btn-round btn-fill btn-wd-size"  

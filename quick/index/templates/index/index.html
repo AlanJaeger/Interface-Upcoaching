@@ -35,6 +35,13 @@
                     <img class="img-responsive img-logo" src="{% static "img/logo-quick.png" %}">
                 </a>
             </div>
+
+            {% if user.is_authenticated %}
+            <div class="col-md-2">
+                <p>Olá {{ user }}</p> 
+            </div>
+            {% endif %}
+
             <div class="col-md-2" style=" max-width:156px; margin-left:115px;">
                  <a class="signin-button text-signin" style="text-decoration:none;" href=/login/>Iniciar Sessão</a> 
             </div> 
