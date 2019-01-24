@@ -36,15 +36,21 @@
                 </a>
             </div>
 
-            {% if user.is_authenticated %}
+            <!-- {% if user.is_authenticated %}
             <div class="col-md-2">
                 <p>Olá {{ user }}</p> 
             </div>
-            {% endif %}
+            {% endif %} -->
 
+            {% if user.is_authenticated %}
+            <div class="col-md-2" style=" max-width:159px; margin-left:115px;">
+                 <a class="signin-button text-signin" style="text-decoration:none;" href=/logout/>Sair</a> 
+            </div>
+            {% else %}
             <div class="col-md-2" style=" max-width:156px; margin-left:115px;">
-                 <a class="signin-button text-signin" style="text-decoration:none;" href=/login/>Iniciar Sessão</a> 
-            </div> 
+                <a class="signin-button text-signin" style="text-decoration:none;" href=/login/>Iniciar Sessão</a> 
+           </div>
+           {% endif %}
             <div class="col-md-2" style=" max-width:144px;">
                 <a class="signin-button text-signin" style="text-decoration:none;" href=/cadastro/>Registrar-se</a> 
            </div>
