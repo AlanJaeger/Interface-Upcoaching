@@ -51,9 +51,11 @@
                 <a class="signin-button text-signin" style="text-decoration:none;" href=/login/>Iniciar Sessão</a> 
            </div>
            {% endif %}
+           {% if not user.is_authenticated %}
             <div class="col-md-2" style=" max-width:144px;">
                 <a class="signin-button text-signin" style="text-decoration:none;" href=/cadastro/>Registrar-se</a> 
            </div>
+           {% endif %}
            <div class="col-md-2">
                 <a class="signin-button text-signin" style="text-decoration:none;" href=/professor/>Torne-se um professor</a> 
            </div>
