@@ -80,13 +80,22 @@
           <div class="title-area">
             <h2 style="font-size:2.7rem">Cadastre-se</h2>
           </div>
+          
+          <form action="{% url 'cadastro' %}" method="post">
+            {% csrf_token %}
+          <!-- <label>Nome de Usuário</label>
+          {{ form.username }}<br>
+          <label>Password</label>
+          {{ form.password }}<br>
+          <label>E-mail</label>
+          {{ form.email }}<br> -->
 
           <label>
-            <h4>Nome Completo</h4>
+            <h4>Nome de Usuário</h4>
           </label>
 
           <div class="form-group" style="width:350px; margin-left:-55px">
-            <input type="text" name="first-name" value="" placeholder="Alan David do Vale Lima" class="form-control form-control-plain">
+            {{ form.username }}<br>
           </div>
 
           <label>
@@ -94,7 +103,7 @@
           </label>
           
           <div class="form-group" style="width:350px; margin-left:-55px">
-            <input type="email" name="email" value="" placeholder="MichaelJordan@gmail.com" class="form-control form-control-plain">
+            {{ form.email }}
           </div>
           
 
@@ -103,9 +112,10 @@
           </label>
 
           <div class="form-group" style="width:350px; margin-left:-55px">
-            <input type="password" name="password" value="" placeholder="&#x25CF;&#x25CF;&#x25CF;&#x25CF;" class="form-control form-control-plain">
+            {{ form.password }}
           </div>
-
+          <button type="submit">Cadastrar</button>
+        </form>
          <!--
           <p class="text-gray">
             By signing up you agree to

@@ -18,6 +18,7 @@ from index.views import *
 from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls import url
+from django.urls import path, include
 
 urlpatterns = [
     url(r'^$', DashboardView.as_view(), name='index'),
@@ -28,12 +29,14 @@ urlpatterns = [
     url(r'aluno',DashboardAluno.as_view()),
     url(r'aprovar/(?P<id_candidato>\d+)/',AprovarEntrada.as_view(), name = 'aprovar'),
     url(r'update',UpdateImagem.as_view(), name = 'update'),
-    url(r'^login/$', Login.as_view(), name='login'),
+    #url(r'^login/$', Login.as_view(), name='login'),
     url(r'^cadastro/$', Cadastro.as_view(), name='cadastro'),
     url(r'^curso/$', Curso.as_view(), name='curso'),
     url(r'^catalogo/$', CatalogoProfessor.as_view(), name='catalogo'),
     url(r'^agenda/$', AgendaProfessor.as_view(), name='agenda'),
-    url(r'^cadastrar_aula/$', CadastroAula.as_view(), name='cadastrar_aula')
+    url(r'^cadastrar_aula/$', CadastroAula.as_view(), name='cadastrar_aula'),
+    path('', include('index.urls')),
 
         
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] 
+#+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
