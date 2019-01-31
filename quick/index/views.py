@@ -4,7 +4,7 @@ from django.http import HttpResponse
 import datetime
 from django.views import View
 from index.models import ProfessoresInteressados, Professor, Disciplina
-from .forms import InteresseForm, ProfessorForm, PedidoForm, AulaForm, UserForm
+from .forms import InteresseForm, ProfessorForm, PedidoForm, AulaForm, EstudanteUserForm, ProfessorUserForm
 
 
 # Create your views here.
@@ -19,12 +19,19 @@ class DashboardView(View):
 
 class DashboardProfessor(View):
     def get(self, request):
-        form = InteresseForm()
-        return render(request,'index/professor.html',{'form': form})
+        form = ProfessorUserForm()
+        return render(request,'index/professor.html', {'form': form})
+
+
     def post(self, request):
-        form = InteresseForm(request.POST, request.FILES)
-        form.save()
-        return render(request,'index/professor.html')
+        form = ProfessorUserForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('login')
+        else:
+            print(form.errors)
+
+        return render(request,'index/professor.html', {'form': form})
 
 class DashboardAdm(View):
     def get(self, request):
@@ -87,12 +94,12 @@ class UpdateImagem(View):
 
 class Cadastro(View):
     def get(self, request):
-        form = UserForm()
+        form = EstudanteUserForm()
         return render(request,'index/cadastro.html', {'form': form})
 
 
     def post(self, request):
-        form = UserForm(request.POST, request.FILES)
+        form = EstudanteUserForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
             return redirect('login')

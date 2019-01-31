@@ -83,7 +83,7 @@
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
                                         <label for="inputEmail4" class="form-text">Nome</label>
-                                        {{form.nome}}
+                                        <input type="text" class="form-control" placeholder="Segundo Nome" name="sobrenome">
                                         </div>
                                     <div class="form-group col-md-6">
                                         <label for="inputEmail4" class="form-text">Sobrenome</label>
@@ -151,6 +151,45 @@
             </div>
         </div>
     </div>
+
+    <form action="{% url 'cadastro' %}" method="post">
+        {% csrf_token %}
+      <label>
+        <h4>Nome de Usuário</h4>
+      </label>
+
+      <div class="form-group" style="width:350px; margin-left:-55px">
+        {{ form.username }}<br>
+      </div>
+
+      <label>
+        <h4>Senha</h4>
+      </label>
+
+      <div class="form-group" style="width:350px; margin-left:-55px">
+        {{ form.password }}
+      </div>
+
+      <label>
+        <h4>nome</h4>
+      </label>
+      
+      <div class="form-group" style="width:350px; margin-left:-55px">
+        {{ form.nome }}
+      </div>
+
+      <label>
+        <h4>sobrenome</h4>
+      </label>
+      
+      <div class="form-group" style="width:350px; margin-left:-55px">
+        {{ form.sobrenome }}
+      </div>
+      
+
+      
+      <button type="submit">Cadastrar</button>
+    </form>
     <!--Card Form-->
 
     <!--Footer-->
