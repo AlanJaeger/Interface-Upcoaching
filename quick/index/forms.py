@@ -5,8 +5,9 @@ from django.utils.timezone import now
 from django import forms
 from django.contrib.auth.models import User
 
+
 # Formulário de Cadastro de Usuário
-class UserForm(ModelForm):
+class EstudanteUserForm(ModelForm):
     class Meta:
         model = User
         fields = ['username', 'password', 'email']
@@ -17,11 +18,41 @@ class UserForm(ModelForm):
         }
 
     def save(self, commit=True):
-        user = super(UserForm, self).save(commit=False)
+        user = super(EstudanteUserForm, self).save(commit=False)
         user.set_password(self.cleaned_data['password'])
         if commit:
             user.save()
         return user
+
+class ProfessorUserForm(forms.ModelForm):
+    class Meta:
+        model = ProfessoresInteressados
+        fields = '__all__'
+    
+    def save(self, commit=True):
+        user = super(ProfessorUserForm, self).save(commit=False)
+        user.set_password(self.cleaned_data['password'])
+        if commit:
+            user.save()
+        return user
+
+    '''fields = ['nome', 'sobrenome', 'data_nascimento', 'cpf', 'telefone', 'email', 'senha', 'endereco', 
+    'complemento', 'cidade', 'estado', 'cep', 'foto']
+    widgets = {
+        'nome': forms.TextInput(attrs={'max_length': 100}),
+        'sobrenome': forms.TextInput(attrs={'max_length': 100}),
+        'data_nascimento': forms.DateTimeInput(),
+        'cpf': mask, 
+        'telefone': , 
+        'email': , 
+        'senha': , 
+        'endereco': ,
+        'complemento': , 
+        'cidade': , 
+        'estado': , 
+        'cep': , 
+        'foto':
+    }'''
 
 class InteresseForm(ModelForm):
     class Meta:

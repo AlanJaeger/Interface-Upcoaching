@@ -6,6 +6,8 @@ from django.db import models
 class ProfessoresInteressados(models.Model):
     nome = models.TextField(max_length = 200)
     sobrenome = models.TextField(max_length = 200)
+    username = models.CharField(max_length=100, null=True, blank=True)
+    password = models.CharField(max_length=100, null=True, blank=True)
     data_nascimento = models.DateField(null=True, blank=True)
     cpf = models.CharField(max_length=14, null=True, blank=True)
     telefone = models.CharField(max_length=16, null=True, blank=True)
