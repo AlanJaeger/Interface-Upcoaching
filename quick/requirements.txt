@@ -3,7 +3,7 @@ certifi==2018.4.16
 cffi==1.5.2
 chardet==3.0.4
 Django==1.11.5
-ecdsa==0.13
+ecdsa==0.13.3
 gyp==0.1
 idna==2.7
 mercurial==3.7.3
