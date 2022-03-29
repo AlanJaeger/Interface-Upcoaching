@@ -9,7 +9,7 @@ idna==2.7
 mercurial==3.7.3
 mysql-connector-python==2.0.4
 mysql-utilities==1.6.1
-paramiko==1.16.0
+paramiko==2.10.1
 pexpect==4.0.1
 ply==3.7
 ptyprocess==0.5
